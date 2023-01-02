@@ -31,6 +31,12 @@
         socket.on('nuevo-mensaje', function( payload ) {
             console.log('Escuchando:', payload);
         })
+
+        socket.on('active-levels', function( levels ){
+            console.clear();
+            console.table( levels);
+        })
+        
     </script>
 </body>
 </html>
